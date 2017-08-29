@@ -2,14 +2,25 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'underscore';
 import ButtonAddPrototype from './ButtonAddPrototype.js';
+import ProgressBarPrototype from './ProgressBarPrototype.js';
+import Calculator from './calculator/Calculator.js';
 import logo from './logo.svg';
 import './App.css';
 
 ReactDOM.render(
   <ButtonAddPrototype />, 
- document.getElementById('container')
+ document.getElementById('buttonadd')
 );
 
+ReactDOM.render(
+   <ProgressBarPrototype />, 
+  document.getElementById('progressbar')
+);
+
+ReactDOM.render(
+   <Calculator />, 
+  document.getElementById('calculator')
+);
 
 class App extends Component {
   render() {
@@ -19,9 +30,6 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          aTo get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
