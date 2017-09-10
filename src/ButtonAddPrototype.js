@@ -10,7 +10,7 @@ class ButtonComponent extends React.Component {
 
 class Result extends React.Component {
 	render() {
-  	return (<input className='form-control' type="text" readonly value={this.props.value} />);
+  	return (<input className='form-control' type="text" readOnly value={this.props.value} />);
   }
 }
 

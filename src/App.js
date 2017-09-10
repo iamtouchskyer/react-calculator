@@ -4,6 +4,7 @@ import _ from 'underscore';
 import ButtonAddPrototype from './ButtonAddPrototype.js';
 import ProgressBarPrototype from './ProgressBarPrototype.js';
 import Calculator from './calculator/Calculator.js';
+import BingAds from './bingads/index.js';
 import logo from './logo.svg';
 import './App.css';
 
@@ -20,6 +21,11 @@ ReactDOM.render(
 ReactDOM.render(
    <Calculator />, 
   document.getElementById('calculator')
+);
+
+ReactDOM.render(
+  <BingAds />,
+  document.getElementById('miniBingAds')
 );
 
 class App extends Component {
