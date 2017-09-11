@@ -9,24 +9,29 @@ class SegmentDropdown extends Component {
     }
 
     componentDidMount() {
-        $('.dropdown-submenu a.sub-dropdown-menu').on("click", function(e){
+        $('#Segment .dropdown-submenu a.sub-dropdown-menu').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
           });
 
-        $('.dropdown a').on("click", function(e){
+        $('.dropdown#Segment a:not(.sub-dropdown-menu)').on("click", function(e){
             this.setState({segmentType: e.target.text});
         }.bind(this));
     }
 
+    componentWillUnmont() {
+        $('#Segment .dropdown-submenu a.sub-dropdown-menu').off("click");
+        $('.dropdown#Segment a:not(.sub-dropdown-menu)').off("click");
+    }
+
     render() {
         return (
-            <div className="dropdown">
-                <button type="button" className="btn btn-default" data-toggle="dropdown">{this.state.segmentType}<span className="caret"></span></button>
+            <div className="dropdown" id="Segment">
+                <button type="button" className="btn btn-default" data-toggle="dropdown">{this.props.fixedTitle ? this.props.title : this.state.segmentType}<span className="caret"></span></button>
                 <ul className="dropdown-menu">
-                    <li><a href="javascript:void(0)">Time</a></li>
-                    <li className="dropdown-submenu"><a href="javascript:void(0)" className="sub-dropdown-menu" data-toggle="dropdown">None<span className="caret caret-right pull-right"></span></a>
+                    <li><a href="javascript:void(0)">None</a></li>
+                    <li className="dropdown-submenu"><a href="javascript:void(0)" className="sub-dropdown-menu" data-toggle="dropdown">Time<span className="caret caret-right pull-right"></span></a>
                         <ul className="dropdown-menu">
                             <li><a href="javascript:void(0)">Day</a></li>
                             <li><a href="javascript:void(0)">Week</a></li>

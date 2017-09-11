@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import FileFormatDropdown from '../../components/fileformat-dropdown.js';
 import SegmentDropdown from '../../components/segment-dropdown.js';
 
 class ToolbarItemBulkEdit extends Component {
@@ -20,7 +21,7 @@ class ToolbarItemBulkEdit extends Component {
                                     <label className="form-text">Format</label>
                                 </div>
                                 <div className="col-sm-10 col-xs-10">
-                                    <label className="form-text">Format</label>
+                                    <FileFormatDropdown />
                                 </div>
                             </div>
 

@@ -1,6 +1,18 @@
 import React, {Component} from 'react';
+import $ from 'jquery';
 
 class Grid extends Component {
+
+
+    componentDidMount() {
+        $('table th > input[type="checkbox"]').on("click", (e) => {
+            if (e.target.checked) {
+                e.target.indeterminate=true;
+            }
+        });
+    }
+
+
     render() {
         return (
             <div>

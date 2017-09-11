@@ -6740,6 +6740,15 @@ button.close {
   cursor:pointer;
 }
 
+.table th {
+    background-color:#E5E5E5;
+}
+
+.table th.sortable {
+    cursor:pointer;
+}
+
+
 .alert-group > .alert {
     padding: 10px;
 }
@@ -6823,28 +6832,28 @@ button.close {
 }
 
 .caret {
-    margin-left: 4px !important;
+    margin-left: 5px !important;
 }
 
 .caret-up {
     border-top: 0;
-    border-bottom: 4px dashed;
-    border-bottom: 4px solid \9;
+    border-bottom: 5px dashed;
+    border-bottom: 5px solid \9;
 }
 .caret-left {
     border-left: 0px;
-    border-right: 4px dashed;
-    border-right: 4px solid \9;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
+    border-right: 5px dashed;
+    border-right: 5px solid \9;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 
 .caret-right {
-    border-left: 4px dashed;
-    border-left: 4px solid \9;
+    border-left: 5px dashed;
+    border-left: 5px solid \9;
     border-right: 0px;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 
 .dropdown-submenu {
@@ -6868,6 +6877,14 @@ button.close {
 
 .btn-group-primary .badge {
     background-color: #EEE !important;
+}
+
+table th > input[type="checkbox"],
+table th > input[type="radio"],
+table tr > input[type="checkbox"],
+table tr > input[type="radio"] {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-text {

@@ -6,15 +6,16 @@ import ToolbarItemAutomate from './toolbar-items/toolbar-item-automate.js';
 import ToolbarItemInlineDownload from './toolbar-items/toolbar-item-inline-download.js';
 import ToolbarInlineViewChangeBudget from './toolbar-inline-views/toolbar-inline-view-change-budget.js';
 import ToolbarInlineViewInlineDownload from './toolbar-inline-views/toolbar-inline-view-inline-download.js';
+import SegmentDropdown from '../components/segment-dropdown.js';
 
 class BingAdsToolbar extends Component {
     constructor() {
         super();
 
         this.toolbarElement = (
-            <div className="btn-toolbar btn-toolbar-group">
-                <div className="btn-group btn-group-primary">
-                    <button className="btn btn-primary">Create Campaign</button>
+            <div className="btn-toolbar btn-toolbar-group" role="toolbar">
+                <div className="btn-group btn-group-primary" role="group">
+                    <button className="btn btn-primary" role="button">Create Campaign</button>
                     <ToolbarItemBulkEdit callback={this.handleToolbarItemClick.bind(this)}/>
                     <ToolbarItemDetails callback={this.handleToolbarItemClick.bind(this)}/>
                     <ToolbarItemAutomate callback={this.handleToolbarItemClick.bind(this)}/>
@@ -22,8 +23,7 @@ class BingAdsToolbar extends Component {
                 </div>
                 
                 <div className="btn-group btn-group-secondary">
-                    <ToolbarItemBulkEdit />
-                    <ToolbarItemBulkEdit />
+                    <SegmentDropdown fixedTitle="true" title="Segment"/>
                 </div>
             </div>
         );
@@ -35,6 +35,8 @@ class BingAdsToolbar extends Component {
         switch (theElementKey) {
             case 'ChangeBudgetSave':
             case 'ChangeBudgetCancel':
+            case 'InlineDownloadDownload':
+            case 'InlineDownloadCancel':
                 this.setState({renderringElement:this.toolbarElement});
                 break;
             

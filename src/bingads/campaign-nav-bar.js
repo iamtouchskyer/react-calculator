@@ -6,7 +6,7 @@ class CampaignNavBar extends React.Component {
         super();
 
         this.metaData = [
-            {title:'Campaigns', link:"#CampaignTab"},
+            {title:'Campaigns', link:"#CampaignTab", className:"active"},
             {title:'Ad Groups', link:"#AdGroupTab"},
             {title:'Settings', link:"#SettingsTab"},
             {title:'Ads', link:"#AdsTab"},
@@ -18,7 +18,7 @@ class CampaignNavBar extends React.Component {
         ];
 
         this.tabs = _.map(this.metaData, (item) => {
-            return (<li><a href={item.link} role='tab'>{item.title}</a></li>);
+            return (<li className={item.className ? item.className : ''}><a href={item.link} role='tab'>{item.title}</a></li>);
         });
     }
 
