@@ -5,7 +5,8 @@ class ToolbarItemBulkEdit extends Component {
     render() {
         return (
             <span className="dropdown">
-                <button className="btn btn-default" data-toggle="dropdown" >Edit<span className="caret"></span></button>
+                <button className="btn btn-default" data-toggle="dropdown" >Edit<span className="caret"></span>
+                </button>
                 <ul className="dropdown-menu"> 
                     <li><a href="#"><span className="glyphicon glyphicon-play"></span>&nbsp;Enable</a></li>
                     <li><a href="#"><span className="glyphicon glyphicon-pause"></span>&nbsp;Pause</a></li>

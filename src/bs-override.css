@@ -3091,7 +3091,7 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-default .badge {
   color: #fff;
-  background-color: #008272;
+  background-color: #333;
 }
 .btn-primary {
   color: #fff;
@@ -3148,7 +3148,7 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-primary .badge {
   color: #337ab7;
-  background-color: #008272;
+  background-color: #fff;
 }
 .btn-success {
   color: #fff;
@@ -6859,6 +6859,15 @@ button.close {
 
 .glyphicon {
     padding-right: 5px;
+}
+
+.badge {
+    color: red !important;
+    font-size: 75%;
+}
+
+.btn-group-primary .badge {
+    background-color: #EEE !important;
 }
 
 .btn, 
