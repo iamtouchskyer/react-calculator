@@ -1065,7 +1065,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #008272;
+  color: #333;
   background-color: #fff;
 }
 input,
@@ -6737,5 +6737,53 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 
 .dropdown-menu-xs {
-    font-size: 12px;
+  font-size: 12px;
 }
+
+.cursor-pointer {
+  cursor:pointer;
+}
+
+.alert-group > .alert {
+    padding: 10px;
+}
+
+.alert-group > .alert > .glyphicon {
+    margin-right: 5px;
+}
+
+.alert-group > .alert:not(:last-child) {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #aaaaaa;
+    color: #666666;
+    background-color: #e5e5e5;
+}
+
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.nav-tabs > li.active > a {
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+.nav-tabs > li > a {
+    color: #666666;
+    border: 1px solid transparent;
+    border-radius: 0px 0px 0 0;
+}
+
