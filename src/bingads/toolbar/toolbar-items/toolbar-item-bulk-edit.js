@@ -4,7 +4,7 @@ class ToolbarItemBulkEdit extends Component {
 
     render() {
         return (
-            <div className="dropdown small">
+            <span className="dropdown">
                 <button className="btn btn-default" data-toggle="dropdown" >Edit<span className="caret"></span></button>
                 <ul className="dropdown-menu"> 
                     <li><a href="#"><span className="glyphicon glyphicon-play"></span>&nbsp;Enable</a></li>
@@ -15,7 +15,7 @@ class ToolbarItemBulkEdit extends Component {
                     <li><a href="#" data-toggle="collapse" data-target="#ToolbarItemOtherChange">Other changes</a></li>
                 </ul>
 
-                <div className="collapse">
+                <div className="collapse" id="ToolbarItemChangeBudget">
                     <div className="panel panel-default">
                         <div className="panel-heading">
                             <div className="panel-title">
@@ -53,7 +53,7 @@ class ToolbarItemBulkEdit extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </span>
         );
     }
 }

@@ -5,6 +5,7 @@ import Wunderbar from './wunderbar.js';
 import AlertGroup from './alert-group.js';
 import CampaignNavBar from './campaign-nav-bar.js';
 import Toolbar from './toolbar/index.js';
+import Grid from './grid/index.js';
 
 class BingAds extends React.Component {
     render() {
@@ -20,7 +21,9 @@ class BingAds extends React.Component {
                         <AlertGroup />    
                         <h3 className="bold"> All Campaigns </h3>
                         <CampaignNavBar />
+                        <p/> <p/> <p/>
                         <Toolbar />
+                        <Grid />
 
                         <h6 className="small">
                         Not all metrics are in real time. Clicks and impressions in the last 2 hours and conversions in the last 5 hours might not be included. Learn more

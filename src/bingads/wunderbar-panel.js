@@ -43,7 +43,7 @@ class WunderbarPanel extends React.Component {
         this.panels = _.map(this.metaData, (item) => {
             let list = _.map(item.children, (subItem) => {
                 return (
-                    <li className="list-group-item"><span className="cursor-pointer small" data-toggle="tab" data-target={subItem.link}>{subItem.title}</span></li>
+                    <li className="list-group-item"><span className="cursor-pointer" data-toggle="tab" data-target={subItem.link}>{subItem.title}</span></li>
                 );
             });
 

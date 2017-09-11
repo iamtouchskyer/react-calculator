@@ -18,7 +18,7 @@ class CampaignNavBar extends React.Component {
         ];
 
         this.tabs = _.map(this.metaData, (item) => {
-            return (<li className="small"><a href={item.link} role='tab'>{item.title}</a></li>);
+            return (<li><a href={item.link} role='tab'>{item.title}</a></li>);
         });
     }
 
