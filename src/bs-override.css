@@ -6804,7 +6804,7 @@ button.close {
     float: left
 }
 
-.btn-group .btn{
+.btn-toolbar-group .btn{
   border: 0px;
 }
 
@@ -6870,19 +6870,6 @@ button.close {
     background-color: #EEE !important;
 }
 
-.btn, 
-a,
-.alert
-{
-    font-size: 80%;
-}
-
-.navbar-nav a,
-.navbar-nav .btn
-{
-    font-size: 100%;
-}
-
-table {
-    font-size: 75%;
+.form-text {
+    margin: 10px;
 }

@@ -23,12 +23,13 @@ class BingAds extends React.Component {
                         <CampaignNavBar />
                         <p/> <p/> <p/>
                         <Toolbar />
+                        <p/> <p/> <p/>
                         <Grid />
 
                         <h6 className="small">
                         Not all metrics are in real time. Clicks and impressions in the last 2 hours and conversions in the last 5 hours might not be included. Learn more
     Only clicks are MRC accredited. The time zone for the date range is (GMT-08:00) Pacific Time (U.S. & Canada); Tijuana. Learn more
-                            </h6>
+                        </h6>
                     </div> 
                 </div>
                 <div style={{clear:'both'}}></div>

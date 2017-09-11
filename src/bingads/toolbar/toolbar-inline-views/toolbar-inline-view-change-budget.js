@@ -4,7 +4,7 @@ class ToolbarItemBulkEdit extends Component {
 
     render() {
         return (
-            <div id="ToolbarItemChangeBudget">
+            <div id="ToolbarItemInlineViewChangeBudget">
                 <div className="panel panel-default">
                     <div className="panel-heading">
                         <div className="panel-title">
@@ -12,32 +12,46 @@ class ToolbarItemBulkEdit extends Component {
                         </div>
                     </div>
 
-                    <div className="form-inline">
-                        <div className="form-group">
-                            <label className="control-label">Action</label>
-                            <select className="form-control">
-                                <option>Set</option>
-                                <option>Increase</option>
-                                <option>Descrease</option>
-                            </select>
+                    <div className="panel-body">
+                        <div className="container">
+                        <div className="row">
+                            <div className="form-inline">
+                                <div className="form-group">
+                                    <label className="form-text">Action</label>
+                                    <select className="form-control">
+                                        <option>Set</option>
+                                        <option>Increase</option>
+                                        <option>Descrease</option>
+                                    </select>
+                                </div>
 
-                            <label className="control-label"> Daily Budget </label>
-                            <div className="input-group">
-                                <input className="form-control" type="text" placeholder="0"/>
-                                <div className="input-group-addon">USD</div>
+                                <div className="form-group">
+                                    <label className="form-text"> Daily Budget </label>
+                                    <div className="input-group">
+                                        <input className="form-control" type="text" placeholder="0"/>
+                                        <span className="input-group-addon">USD</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="btn-toolbar">
-                        <div className="btn-group">
-                            <button type="button" className="btn btn-primary">Save</button>
+                        <div className="row">
+                                &nbsp;
                         </div>
-                        <div className="btn-group">
-                            <button type="button" className="btn btn-default">Preview</button>
+
+                        <div className="row">
+                            <div className="btn-toolbar">
+                                <div className="btn-group">
+                                    <button type="button" className="btn btn-primary" onClick={()=>{this.props.callBack('ChangeBudgetSave')}}>Save</button>
+                                </div>
+                                <div className="btn-group">
+                                    <button type="button" className="btn btn-default">Preview</button>
+                                </div>
+                                <div className="btn-group">
+                                    <button type="button" className="btn btn-default" onClick={()=>{this.props.callBack('ChangeBudgetCancel')}}>Cancel</button>
+                                </div>
+                            </div>
                         </div>
-                        <div className="btn-group">
-                            <button type="button" className="btn btn-default">Cancel</button>
                         </div>
                     </div>
                 </div>
