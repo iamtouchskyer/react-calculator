@@ -18,7 +18,7 @@ class Header extends React.Component {
                         <li><a href="#" data-toggle="tab" data-target="#Opportunities">Opportunities</a></li>
                         <li className="dropdown">
                             <a href="#" className="dropdown-toggle" data-toggle="dropdown">Tools&nbsp;<span className="caret"></span></a>
-                            <ul className="dropdown-menu dropdown-menu-xs">
+                            <ul className="dropdown-menu">
                                 <li><a href="#" data-toggle="tab" data-target="#AdPreview">Ad Preview Tool</a></li>                           
                                 <li><a href="#" data-toggle="tab" data-target="#KeywordPlanner">Keyword Planner</a></li>                           
                                 <li className="divider"></li>

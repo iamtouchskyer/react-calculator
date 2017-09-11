@@ -6736,10 +6736,6 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-.dropdown-menu-xs {
-  font-size: 12px;
-}
-
 .cursor-pointer {
   cursor:pointer;
 }
@@ -6800,11 +6796,7 @@ button.close {
     border-radius: 0px 0px 0 0;
 }
 
-.btn-group-primary {
-    background-color: #EEE;
-}
-
-.btn-group-primary .dropdown .btn {
+.btn-group-primary .btn:not(.btn-primary) {
     background-color: #EEE;
 }
 
@@ -6812,7 +6804,7 @@ button.close {
     float: left
 }
 
-.btn-group > .dropdown > .btn{
+.btn-group .btn{
   border: 0px;
 }
 
@@ -6830,11 +6822,56 @@ button.close {
   border-bottom-left-radius: 0;
 }
 
+.caret {
+    margin-left: 4px !important;
+}
+
+.caret-up {
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+}
+.caret-left {
+    border-left: 0px;
+    border-right: 4px dashed;
+    border-right: 4px solid \9;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.caret-right {
+    border-left: 4px dashed;
+    border-left: 4px solid \9;
+    border-right: 0px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.glyphicon {
+    padding-right: 5px;
+}
+
 .btn, 
 a,
 .alert
 {
     font-size: 80%;
+}
+
+.navbar-nav a,
+.navbar-nav .btn
+{
+    font-size: 100%;
 }
 
 table {

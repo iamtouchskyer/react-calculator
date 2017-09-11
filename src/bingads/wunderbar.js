@@ -8,7 +8,7 @@ class Wunderbar extends React.Component {
                 <div className="form-group dropdown from-group-xs">
                     <label className="control-label">Selected Account</label> 
                     <button className="form-control btn-xs" type="button" data-toggle="dropdown" role="button">touchskyer00 - B0105ULF<span className="caret"></span></button>
-                    <ul className="dropdown-menu dropdown-menu-xs" role="menu">
+                    <ul className="dropdown-menu" role="menu">
                         <li><a href="#" role="menuitem">touchskyer00 - B0105ULF</a></li>
                         <li><a href="#" role="menuitem">touchskyer01 - B010E7GZ</a></li>
                     </ul>
